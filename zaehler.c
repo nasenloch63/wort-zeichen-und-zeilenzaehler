@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
     while ((zeichen = fgetc(datei)) != EOF)
     {
-        
+        printf("%c", zeichen);
     }
 return 0;
 }
