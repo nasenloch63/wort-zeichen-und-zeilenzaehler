@@ -25,9 +25,15 @@ int main(int argc, char *argv[]) {
     {
         printf("%c", zeichen);
         anzahlZeichen++;
+        if (zeichen == "\n")
+        {
+            anzahlZeilen++;
+        }
+        
     }
 
     printf("Zeichen: %d\n", anzahlZeichen);
+    printf("Zeilen: %d\n", anzahlZeilen);
 
 return 0;
 }
