@@ -7,9 +7,8 @@ int main(int argc, char *argv[]) {
     int anzahlZeilen = 0;
 
     if(argc != 2) {
-        printf("Fehler: \n");
+        printf("Fehler: Genau ein Dateiname muss angegeben werden.\n");
+        return 1;
     }
-     else { 
-        printf("ausgabe\n");
-return 1;
+return 0;
 }
