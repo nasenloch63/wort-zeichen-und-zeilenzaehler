@@ -5,13 +5,13 @@ int main(int argc, char *argv[]) {
     int anzahlZeichen = 0;
     int anzahlWoerter = 0;
     int anzahlZeilen = 0;
-
+ // 
     if(argc != 2) {
         printf("Fehler: Genau ein Dateiname muss angegeben werden.\n");
         return 1;
     }
-    FILE *datei;
-
+    FILE *datei; 
+// Dateiöffnung
     datei = fopen(argv[1], "r");
 
     if (datei == NULL) {
@@ -37,9 +37,10 @@ int main(int argc, char *argv[]) {
     {
         anzahlZeichen++;
     }
-    
+
+    printf("\n");
     printf("Zeichen: %d\n", anzahlZeichen);
     printf("Zeilen: %d\n", anzahlZeilen);
-
+    printf("Wörter: %d\n", anzahlWoerter);
 return 0;
 }
