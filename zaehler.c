@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     datei = fopen(argv[1], "r");
 
     if (datei == NULL) {
-        printf("Fehler: Datei kann nicht geöffnet werden\n");
+        printf("Fehler: Datei kann nicht gefunden werden\n");
         return 1;
     }
 
