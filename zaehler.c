@@ -10,5 +10,20 @@ int main(int argc, char *argv[]) {
         printf("Fehler: Genau ein Dateiname muss angegeben werden.\n");
         return 1;
     }
+    FILE *datei;
+
+    datei = fopen(argv[1], "r");
+
+    if (datei == NULL) {
+        printf("Fehler: Datei kann nicht geöffnet werden\n");
+        return 1;
+    }
+
+    int zeichen;
+
+    while ((zeichen = fgetc(datei)) != EOF)
+    {
+        
+    }
 return 0;
 }
