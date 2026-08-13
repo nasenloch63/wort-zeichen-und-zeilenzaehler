@@ -27,6 +27,7 @@ int main(int argc, char *argv[]) {
         anzahlZeichen++;
     }
 
-    printf("Zeichen: %d\n", anzahlZeichen)
+    printf("Zeichen: %d\n", anzahlZeichen);
+
 return 0;
 }
