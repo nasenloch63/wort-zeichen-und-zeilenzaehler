@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
     char wort[100];
     rewind(datei);
 
-    while (fscanf(datei, "99s", wort) ==1) {
+    while (fscanf(datei, "%99s", wort) ==1) {
         anzahlWoerter++;
     }
     printf("\n");
