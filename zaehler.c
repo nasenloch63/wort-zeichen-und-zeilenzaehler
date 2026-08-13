@@ -35,12 +35,18 @@ int main(int argc, char *argv[]) {
     }
      if (letztesZeichen != EOF && letztesZeichen != '\n')
     {
-        anzahlZeichen++;
+        anzahlZeilen++;
     }
+    char wort[100];
+    rewind(datei);
 
+    while (fscanf(datei, "99s", wort) ==1) {
+        anzahlWoerter++;
+    }
     printf("\n");
     printf("Zeichen: %d\n", anzahlZeichen);
     printf("Zeilen: %d\n", anzahlZeilen);
     printf("Wörter: %d\n", anzahlWoerter);
+    fclose(datei);
 return 0;
 }
