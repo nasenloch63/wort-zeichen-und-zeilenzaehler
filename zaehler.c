@@ -7,7 +7,9 @@ int main(int argc, char *argv[]) {
     int anzahlZeilen = 0;
 
     if(argc != 2) {
-        printf("Fehler: \n"); 
+        printf("Fehler: \n");
     }
+     else { 
+        printf("ausgabe\n");
 return 1;
 }
