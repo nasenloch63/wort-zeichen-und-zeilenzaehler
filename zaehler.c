@@ -20,9 +20,11 @@ int main(int argc, char *argv[]) {
     }
 
     int zeichen;
-
+    int letztesZeichen = EOF;
+   
     while ((zeichen = fgetc(datei)) != EOF)
     {
+        letztesZeichen = zeichen;
         printf("%c", zeichen);
         anzahlZeichen++;
         if (zeichen == '\n')
@@ -31,7 +33,11 @@ int main(int argc, char *argv[]) {
         }
         
     }
-
+     if (letztesZeichen != EOF && letztesZeichen != '\n')
+    {
+        anzahlZeichen++;
+    }
+    
     printf("Zeichen: %d\n", anzahlZeichen);
     printf("Zeilen: %d\n", anzahlZeilen);
 
