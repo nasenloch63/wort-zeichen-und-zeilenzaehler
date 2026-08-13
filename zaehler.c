@@ -24,6 +24,9 @@ int main(int argc, char *argv[]) {
     while ((zeichen = fgetc(datei)) != EOF)
     {
         printf("%c", zeichen);
+        anzahlZeichen++;
     }
+
+    printf("Zeichen: %d\n", anzahlZeichen)
 return 0;
 }
