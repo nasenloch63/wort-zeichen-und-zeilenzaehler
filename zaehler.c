@@ -25,7 +25,6 @@ int main(int argc, char *argv[]) {
     while ((zeichen = fgetc(datei)) != EOF)
     {
         letztesZeichen = zeichen;
-        printf("%c", zeichen);
         anzahlZeichen++;
         if (zeichen == '\n')
         {
@@ -43,7 +42,6 @@ int main(int argc, char *argv[]) {
     while (fscanf(datei, "%99s", wort) ==1) {
         anzahlWoerter++;
     }
-    printf("\n");
     printf("Zeichen: %d\n", anzahlZeichen);
     printf("Zeilen: %d\n", anzahlZeilen);
     printf("Wörter: %d\n", anzahlWoerter);
